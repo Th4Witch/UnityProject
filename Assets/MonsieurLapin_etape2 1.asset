@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb78b92749df5a94a8c576d1263891da, type: 3}
+  m_Name: MonsieurLapin_etape2 1
+  m_EditorClassIdentifier: 
+  lapinName: 
+  dialogue:
+  - 
+  - "PAR MES MOUSTACHES ! MAIS C'EST VOUS ! attendez attendez, vous \xEAtes bien
+    ALICE ?! LA ALICE que j'attend depuis.... oh mis\xE8re je ne sais plus, ma montre
+    a cess\xE9 de fonctionner il y a bien longtemps... TIC TAC TIC TAC... Mmh voyons
+    voir, vous \xEAtes ..."
+  - "Oh seigneur... mais o\xF9 est donc cette Alice ... NOUS SOMMES EN RETARD ENFIN
+    ! TIC TAC TIC TAC ...\nVOUS VOUS ETES PERDU C'EST CA ? Saperlipopette ... oh
+    la la la mais comment je vais faire... VOUS ! MAIS BIEN SUR ! Je suis sur qu'ils
+    ne verront m\xEAme pas la diff\xE9rence ! Regardez vous, vous \xEAtes ..."
+  - 
+  - 
+  playerDialogue:
+  - Je suis Alice.
+  - Je suis Bernard.

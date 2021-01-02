@@ -10,15 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb78b92749df5a94a8c576d1263891da, type: 3}
-  m_Name: MonsieurLapin
+  m_Name: MonsieurLapin_etape1 1
   m_EditorClassIdentifier: 
-  name: Monsieur Lapin
+  lapinName: 
   dialogue:
   - ... En retard, en retard, en retard... OH JE SUIS SI EN RETARD ! TIC TAC TIC
     TAC ...
-  - "A mon rendez-vous pardi ! oh la la la ... mais enfin, qui \xEAtes-vous ?!"
+  - A mon rendez-vous pardi ! oh la la la ... MAIS ENFIN QUI ETES-VOUS ?
   - Oh ! Oui je suis Monsieur Lapin... Ecoutez, je n'ai pas le temps, j'attends quelqu'un
-    mais il est en retard ... OH MAIS ATTENDEZ, QUI ETES VOUS ?
+    mais il est en retard ... MAIS ENFIN QUI ETES-VOUS ?
+  - 
+  - 
   playerDialogue:
   - "En retard ? Pour aller o\xF9 ?"
   - Un lapin qui parle ?

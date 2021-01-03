@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb78b92749df5a94a8c576d1263891da, type: 3}
   m_Name: MonsieurLapin_etape5 1
   m_EditorClassIdentifier: 
-  lapinName: 
+  lapinName: Monsieur Lapin
   dialogue:
   - 
   - "Fou? Par mes moustaches, c'est vous qui parlez \xE0 un lapin ! Maintenant faites

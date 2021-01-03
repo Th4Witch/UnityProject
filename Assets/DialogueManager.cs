@@ -39,7 +39,7 @@ public class DialogueManager : MonoBehaviour
         distance = Vector3.Distance(player.transform.position, this.transform.position);
         if (distance <= 2.5f)
         {
-            
+           
             //trigger dialogue
             if (Input.GetKeyDown(KeyCode.E) && isTalking == false)
             {

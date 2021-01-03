@@ -20,7 +20,9 @@ public class DialogueManager : MonoBehaviour
     public Text npcName;
     public Text npcDialogueBox;
     public Text playerResponse;
+    public Text interactionPopup;
 
+    public Animator vignetteAnim;
 
 
     // Start is called before the first frame update
@@ -39,7 +41,8 @@ public class DialogueManager : MonoBehaviour
         distance = Vector3.Distance(player.transform.position, this.transform.position);
         if (distance <= 2.5f)
         {
-           
+            if (!isTalking) interactionPopup.enabled = true;
+
             //trigger dialogue
             if (Input.GetKeyDown(KeyCode.E) && isTalking == false)
             {
@@ -81,6 +84,7 @@ public class DialogueManager : MonoBehaviour
                     if (state < npcs.Count - 1)
                     {
                         state++;
+                        vignetteAnim.SetInteger("State", state);
                         curResponseTracker = 0;
                         playerResponse.text = npcs[state].playerDialogue[0];
 
@@ -98,6 +102,7 @@ public class DialogueManager : MonoBehaviour
                     if (state < npcs.Count - 1)
                     {
                         state++;
+                        vignetteAnim.SetInteger("State", state);
                         curResponseTracker = 0;
                         playerResponse.text = npcs[state].playerDialogue[0];
                     }
@@ -113,6 +118,7 @@ public class DialogueManager : MonoBehaviour
                     if (state < npcs.Count - 1)
                     {
                         state++;
+                        vignetteAnim.SetInteger("State", state);
                         curResponseTracker = 0;
                         playerResponse.text = npcs[state].playerDialogue[0];
                     }
@@ -122,12 +128,14 @@ public class DialogueManager : MonoBehaviour
         else
         {
             EndDialogue();
+            interactionPopup.enabled = false;
         }
     }
 
     void StartConversation()
     {
         isTalking = true;
+        interactionPopup.enabled = false;
         curResponseTracker = 0;
         dialogueUI.SetActive(true);
         npcName.text = npcs[state].lapinName;
